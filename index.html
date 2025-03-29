@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -38,9 +37,12 @@
     }
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 1.5rem;
       margin-bottom: 3rem;
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
     }
     .card {
       background: white;
@@ -94,13 +96,6 @@
       margin-top: 2rem;
       color: #888;
     }
-    img.screenshot {
-      margin-top: 3rem;
-      width: 100%;
-      max-width: 700px;
-      border-radius: 1rem;
-      box-shadow: 0 5px 20px rgba(0,0,0,0.15);
-    }
   </style>
 </head>
 <body>
@@ -151,8 +146,6 @@
       <p>Oferta de lançamento válida por tempo limitado.</p>
       <button class="button" onclick="window.location.href='#'">Quero Comprar Agora</button>
     </div>
-
-    <img src="logo_professor_python.png" alt="Print do GPT" class="screenshot" />
 
     <footer>
       <p>&copy; 2025 Professor Python Interativo. Todos os direitos reservados.</p>
