@@ -13,55 +13,104 @@
       padding: 0;
     }
     .container {
-      padding: 2rem;
+      padding: 3rem 1.5rem;
       max-width: 1200px;
       margin: auto;
       text-align: center;
     }
     .logo {
-      width: 160px;
+      width: 180px;
       height: auto;
-      border-radius: 100%;
-      box-shadow: 0 0 12px rgba(0,0,0,0.2);
+      border-radius: 50%;
+      box-shadow: 0 0 12px rgba(0,0,0,0.3);
       margin: 2rem auto;
     }
     h1 {
-      font-size: 3rem;
+      font-size: 3.5rem;
       color: #1abc9c;
-      margin-bottom: 0.5rem;
+      margin-bottom: 1rem;
     }
     p.description {
-      font-size: 1.25rem;
-      margin-bottom: 2rem;
+      font-size: 1.4rem;
+      margin-bottom: 2.5rem;
       color: #34495e;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
     }
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 1.5rem;
-      margin-bottom: 3rem;
-      max-width: 1200px;
-      margin-left: auto;
-      margin-right: auto;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 2rem;
+      margin-bottom: 4rem;
+    }
+    @media (max-width: 992px) {
+      .grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    @media (max-width: 600px) {
+      .grid {
+        grid-template-columns: 1fr;
+      }
     }
     .card {
       background: white;
       border-radius: 1.5rem;
-      padding: 1.5rem;
+      padding: 2rem;
       box-shadow: 0 5px 15px rgba(0,0,0,0.1);
       border-left: 6px solid #1abc9c;
       text-align: left;
     }
     .card h2 {
       color: #148f77;
-      margin-bottom: 0.5rem;
+      margin-bottom: 1rem;
+      font-size: 1.6rem;
+    }
+    .section {
+      background: #ffffff;
+      padding: 4rem 2rem;
+      margin-bottom: 2rem;
+      border-top: 4px solid #1abc9c;
+      border-radius: 1rem;
+      box-shadow: 0 4px 18px rgba(0, 0, 0, 0.07);
+    }
+    .section h2 {
+      font-size: 2rem;
+      color: #148f77;
+      margin-bottom: 1.5rem;
+    }
+    .section p {
+      font-size: 1.15rem;
+      max-width: 900px;
+      margin: 0 auto 2rem auto;
+      color: #2c3e50;
+      line-height: 1.8;
+    }
+    .price-box {
+      background: #fff3e0;
+      border: 2px dashed #f39c12;
+      border-radius: 1rem;
+      padding: 2rem;
+      margin: 2rem auto 4rem auto;
+      max-width: 600px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    }
+    .price-box h3 {
+      color: #e67e22;
+      font-size: 2.5rem;
+      margin-bottom: 0.8rem;
+    }
+    .price-box p {
+      font-size: 1.25rem;
+      margin-bottom: 1rem;
     }
     .button {
       background-color: #1abc9c;
       color: white;
       border: none;
       padding: 1rem 2rem;
-      font-size: 1.25rem;
+      font-size: 1.2rem;
       border-radius: 9999px;
       cursor: pointer;
       transition: background-color 0.3s ease;
@@ -70,30 +119,9 @@
     .button:hover {
       background-color: #17a589;
     }
-    .section {
-      padding: 2rem 0;
-      text-align: center;
-    }
-    .price-box {
-      background: #fff3e0;
-      border: 2px dashed #f39c12;
-      border-radius: 1rem;
-      padding: 2rem;
-      margin: 2rem auto;
-      max-width: 500px;
-    }
-    .price-box h3 {
-      color: #e67e22;
-      font-size: 2rem;
-      margin-bottom: 0.5rem;
-    }
-    .price-box p {
-      font-size: 1.2rem;
-      margin-bottom: 0.5rem;
-    }
     footer {
       text-align: center;
-      margin-top: 2rem;
+      margin: 3rem 0 1rem 0;
       color: #888;
     }
   </style>
@@ -103,42 +131,42 @@
     <img src="logo_pixar_gpt.png.png" alt="Logo Professor Python" class="logo" />
     <h1>Professor Python Interativo 🐍</h1>
     <p class="description">
-      Um GPT criado para te ensinar Python com clareza, gamificação, motivação e projetos reais.<br/>
-      Aprenda de forma divertida, prática e no seu ritmo!
+      O melhor tutor de Python criado com inteligência artificial para guiar você do absoluto zero à maestria na programação.
+      Domine uma das linguagens mais poderosas e requisitadas do mundo com um professor que nunca se cansa, adapta-se ao seu estilo e te motiva a evoluir.
     </p>
 
     <div class="grid">
       <div class="card">
         <h2>✅ Ensino Progressivo</h2>
-        <p>Aprenda do zero ao avançado com explicações simples, códigos práticos e teoria aplicada.</p>
+        <p>Você começa do básico com comandos simples, aprende a lógica passo a passo e, conforme avança, vai criando funções, manipulando arquivos, entendendo classes e até construindo projetos reais. A jornada é cuidadosamente pensada para ser envolvente e segura.</p>
       </div>
       <div class="card">
         <h2>🎮 Gamificação e Feedback</h2>
-        <p>Suba de nível a cada módulo, receba correções personalizadas e mantenha a motivação com desafios bônus.</p>
+        <p>Ao completar um módulo, você sobe de nível, ganha insígnias e é desafiado com exercícios extras. O GPT responde, corrige e elogia, criando uma experiência de aprendizado dinâmica, estimulante e divertida — diferente de tudo que você já viu.</p>
       </div>
       <div class="card">
         <h2>💡 Projetos Temáticos</h2>
-        <p>Pratique com projetos reais baseados nos seus gostos: música, esportes, produtividade, dados e mais.</p>
+        <p>Gosta de futebol? Criamos um placar automatizado. Curte música? Montamos um gerador de playlists. Produtividade? Um organizador de tarefas com alertas. O GPT oferece ideias de projetos baseados nos seus gostos e te ajuda a construir linha por linha.</p>
       </div>
       <div class="card">
         <h2>🧠 Estilo Personalizado</h2>
-        <p>Escolha entre estilo técnico, informal ou motivacional. O GPT adapta sua linguagem para o seu perfil.</p>
+        <p>Você escolhe: quer explicações técnicas como um engenheiro? Prefere informalidade com bom humor? Ou uma abordagem motivacional, com frases inspiradoras e exemplos do dia a dia? O GPT adapta a linguagem, o ritmo e até o humor para se moldar ao seu estilo.</p>
       </div>
     </div>
 
     <div class="section">
       <h2>📌 Para que serve?</h2>
-      <p>Aprenda Python com uma IA que ensina como um verdadeiro mentor. Ideal para iniciantes, autônomos, estudantes e empreendedores.</p>
+      <p>O Professor Python Interativo serve para quem quer aprender a programar com um guia confiável, divertido e 100% adaptável. Ele é ideal para iniciantes, mas também desafia quem já tem alguma base. Você pode usá-lo para aprender programação, automatizar tarefas, desenvolver bots, sistemas e até dar os primeiros passos na inteligência artificial.</p>
     </div>
 
     <div class="section">
       <h2>🚀 Como usar?</h2>
-      <p>Acesse o link, escolha seu estilo de aprendizado, diga “quero começar” e deixe que o Professor Python te guie passo a passo.</p>
+      <p>Simples! Basta acessar o link, escolher seu estilo de ensino, e dizer “quero começar”. A partir daí, ele inicia a primeira aula, mostra o primeiro código e propõe desafios. Você aprende fazendo, corrige seus erros e avança com segurança. É como ter um mentor de programação dentro do seu computador, disponível 24h por dia.</p>
     </div>
 
     <div class="section">
       <h2>🛒 Por que comprar?</h2>
-      <p>Economize meses de tentativa e erro. Aprenda com uma IA que se adapta a você, oferece desafios personalizados, e te ajuda a dominar Python com leveza e eficiência.</p>
+      <p>Ao invés de cursos engessados, vídeos longos e fórmulas que não funcionam, você vai ter um professor virtual que conversa com você, explica com clareza, desafia na medida certa e se adapta ao seu tempo, estilo e necessidade. Além disso, ele custa uma fração do que você pagaria em um curso tradicional — e entrega muito mais valor.</p>
     </div>
 
     <div class="price-box">
